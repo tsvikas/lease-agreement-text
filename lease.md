@@ -17,10 +17,10 @@
 {% for tenant in tenants %}
 {{loop.index}}. {{tenant.name|esc}}, ת.ז. מס' {{tenant.id|esc}}.
 
+   מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}}.
+
 {% endfor %}
 שניהם 'ביחד ולחוד'
-
-מרחוב {{tenants_address|esc}} ב{{tenants_city|esc}}.
 
 יכונו להלן יחדיו: "**השוכר**"
 
