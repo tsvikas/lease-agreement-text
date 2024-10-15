@@ -20,10 +20,16 @@
    טלפון {{tenant.phone|esc}}.
 
 {% endfor %}
+{% if tenants|length > 2 %}
+כולם 'ביחד ולחוד'
+{% elif tenants|length == 2 %}
 שניהם 'ביחד ולחוד'
-
+{% endif %}
+{% if tenants|length == 1 %}
+להלן לשם הקיצור: "**השוכר**"
+{% else %}
 יכונו להלן יחדיו: "**השוכר**"
-
+{% endif %}
 מצד שני
 
 1.  **מבוא**
