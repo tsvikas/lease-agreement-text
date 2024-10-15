@@ -1,3 +1,5 @@
+% חוזה שכירות מומלץ
+
 # חוזה שכירות
 
 שנערך ונחתם ב{{sign.location|esc}}, ב־{{sign.date|day|esc}} בחודש {{sign.date|month_name|esc}} בשנת {{sign.date|year|esc}}.
