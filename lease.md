@@ -5,9 +5,7 @@
 **בין**
 
 {{landlord.name|esc}}, ת.ז. מס' {{landlord.id|esc}},
-
 מרחוב {{landlord.address|esc}} ב{{landlord.city|esc}},
-
 טלפון {{landlord.phone|esc}}.
 
 להלן לשם הקיצור: "**בעל הדירה**"
@@ -18,9 +16,7 @@
 
 {% for tenant in tenants %}
 {{loop.index}}. {{tenant.name|esc}}, ת.ז. מס' {{tenant.id|esc}},
-
    מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}},
-
    טלפון {{tenant.phone|esc}}.
 
 {% endfor %}
