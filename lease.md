@@ -4,9 +4,9 @@
 
 **בין**
 
-{{landlord.name|esc}}, ת.ז. מס' {{landlord.id|esc}}.
+{{landlord.name|esc}}, ת.ז. מס' {{landlord.id|esc}},
 
-מרחוב {{landlord.address|esc}} ב{{landlord.city|esc}}.
+מרחוב {{landlord.address|esc}} ב{{landlord.city|esc}},
 
 טלפון {{landlord.phone|esc}}.
 
@@ -17,9 +17,9 @@
 **לבין**
 
 {% for tenant in tenants %}
-{{loop.index}}. {{tenant.name|esc}}, ת.ז. מס' {{tenant.id|esc}}.
+{{loop.index}}. {{tenant.name|esc}}, ת.ז. מס' {{tenant.id|esc}},
 
-   מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}}.
+   מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}},
 
    טלפון {{tenant.phone|esc}}.
 
