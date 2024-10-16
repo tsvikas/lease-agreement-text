@@ -17,7 +17,7 @@
 **לבין**
 
 {% for tenant in tenants %}
-{{loop.index}}. {{tenant.name|esc}}, ת.ז. מס' {{tenant.id|esc}},
+{{loop.index}}. {{tenant.name|esc}}, ת.ז. מס' {{tenant.id|esc}},\
    מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}},
    טלפון {{tenant.phone|esc}}.
 
