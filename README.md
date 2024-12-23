@@ -17,7 +17,7 @@
 ## Usage
 This is a jinja template of a markdown format.
 See [tsvikas/lease-agreement](https://github.com/tsvikas/lease-agreement)
-for a Markdown file with blank lines, that can be loaded into word processors
+for usage, including a Markdown file with blank lines that can be loaded into word processors
 
 ## מקורות
 ### עיריית תל אביב
