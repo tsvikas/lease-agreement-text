@@ -11,6 +11,11 @@
 מומלץ להיוועץ בעורך דין מוסמך או מומחה מתאים לפני הסתמכות על תוכן זה או שימוש בו.
 הכותב אינו נושא באחריות לשום נזק או הפסד שעלול להיגרם כתוצאה משימוש בתוכן זה.
 
+## Usage
+This is a jinja template of a markdown format.
+See [tsvikas/lease-agreement](https://github.com/tsvikas/lease-agreement)
+for a Markdown file with blank lines, that can be loaded into word processors
+
 ## מקורות
 ### עיריית תל אביב
 [חוזה שכירות מומלץ](https://www.tel-aviv.gov.il/Residents/Assets/Pages/rent.aspx)
