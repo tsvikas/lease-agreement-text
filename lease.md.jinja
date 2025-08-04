@@ -18,7 +18,7 @@
 **לבין**
 
 {% for tenant in tenants %}
-{{loop.index}}. {{tenant.name|esc}},\
+{% if tenants|length > 1 %}{{loop.index}}. {% endif %}{{tenant.name|esc}},\
    ת״ז {{tenant.id|esc}},\
    מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}},\
    טלפון {{tenant.phone|esc}}.\
