@@ -7,7 +7,7 @@
 {{landlord.name|esc}},\
 ת״ז {{landlord.id|esc}},\
 מרחוב {{landlord.address|esc}} ב{{landlord.city|esc}},\
-טלפון {{landlord.phone|esc}}.\
+טלפון {{landlord.phone|esc}}.
 
 להלן לשם הקיצור: ”**בעל הדירה**”
 
@@ -21,7 +21,7 @@
 {% if tenants|length > 1 %}{{loop.index}}. {% endif %}{{tenant.name|esc}},\
    ת״ז {{tenant.id|esc}},\
    מרחוב {{tenant.address|esc}} ב{{tenant.city|esc}},\
-   טלפון {{tenant.phone|esc}}.\
+   טלפון {{tenant.phone|esc}}.
 
 {% endfor %}
 {% if tenants|length > 2 %}
