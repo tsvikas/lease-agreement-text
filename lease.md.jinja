@@ -76,16 +76,16 @@
 
 4.  **תקופת השכירות**
 
-    1. מוסכם על הצדדים כי תקופת השכירות בדירה תהיה בת {{period.n_months|esc}} ({{period.n_months|verbal_male|esc}}) חודשים, כך שתחל ביום {{period.start_date|date|ins}} ותסתיים ביום {{period.end_date|date|ins}} (להלן: ”**תקופת השכירות**”).
+    1. מוסכם על הצדדים כי תקופת השכירות בדירה תהיה בת {{period.n_months|esc}} ({{period.n_months|hebrew_count("m")|esc}}) חודשים, כך שתחל ביום {{period.start_date|date|ins}} ותסתיים ביום {{period.end_date|date|ins}} (להלן: ”**תקופת השכירות**”).
 
 5.  **דמי השכירות**
 
-    1. עבור שכירת הדירה במהלך תקופת השכירות ישלם השוכר לבעל הדירה דמי שכירות בסך {{payment.ils_per_month|ins}}₪ ({{payment.ils_per_month|verbal_male|ins}} שקלים חדשים) לחודש (להלן: ”**דמי השכירות**”). דמי השכירות ישולמו כל {{payment.day|ins}} לחודש.
+    1. עבור שכירת הדירה במהלך תקופת השכירות ישלם השוכר לבעל הדירה דמי שכירות בסך {{payment.ils_per_month|ins}}₪ ({{payment.ils_per_month|hebrew_count("m")|ins}} שקלים חדשים) לחודש (להלן: ”**דמי השכירות**”). דמי השכירות ישולמו כל {{payment.day|ins}} לחודש.
 
 {% if payment.mode == "bank-transfer" %}
     2. דמי השכירות ישולמו בהעברה בנקאית שתבוצע לחשבון בנק {{payment.bank_transfer.bank_name|ins}} מס׳ {{payment.bank_transfer.account_number|ins}}, בכל {{payment.day|ins}} לחודש בתקופת השכירות.
 {% elif payment.mode == "checks" %}
-    2. השוכר יפקיד בידי בעל הדירה במעמד חתימת חוזה זה {{period.n_months|esc}} ({{period.n_months|verbal_female|esc}}) המחאות עבור כל אחד מ־{{period.n_months|esc}} ({{period.n_months|verbal_male|esc}}) חודשי השכירות.
+    2. השוכר יפקיד בידי בעל הדירה במעמד חתימת חוזה זה {{period.n_months|esc}} ({{period.n_months|hebrew_count("f")|esc}}) המחאות עבור כל אחד מ־{{period.n_months|esc}} ({{period.n_months|hebrew_count("m")|esc}}) חודשי השכירות.
        מוסכם על הצדדים כי רק פירעון בפועל של כל המחאה והמחאה, ייחשב כתשלום דמי השכירות (אלא אם לא תיפרע המחאה מחמת סיבה הקשורה בבעל הדירה).
 {% else %}{{ raise('An error occurred: unexpected condition') }}{% endif %}
 
@@ -93,24 +93,24 @@
 {% if extend_option.n_months > 0 %}
 6.  **תקופת האופציה**
 
-    1. ניתנת בזאת לשוכר זכות ברירה (אופציה) להאריך את תקופת השכירות לתקופה נוספת אחת בלבד בת {{extend_option.n_months|esc}} ({{extend_option.n_months|verbal_male|esc}}) חודשים שתחל מיד עם תום תקופת השכירות (לעיל ולהלן: ”**תקופת האופציה**”).
+    1. ניתנת בזאת לשוכר זכות ברירה (אופציה) להאריך את תקופת השכירות לתקופה נוספת אחת בלבד בת {{extend_option.n_months|esc}} ({{extend_option.n_months|hebrew_count("m")|esc}}) חודשים שתחל מיד עם תום תקופת השכירות (לעיל ולהלן: ”**תקופת האופציה**”).
 
     2. דמי השכירות בתקופת האופציה יהיו כמפורט בסעיף 5.1,
-       אולם בעל הדירה רשאי להודיע לשוכר על התייקרות של עד {{extend_option.max_raise_percent|esc}}% ({{extend_option.max_raise_percent|verbal_male|esc}} אחוזים) בשיעור דמי השכירות החודשיים בתקופת האופציה.
+       אולם בעל הדירה רשאי להודיע לשוכר על התייקרות של עד {{extend_option.max_raise_percent|esc}}% ({{extend_option.max_raise_percent|hebrew_count("m")|esc}} אחוזים) בשיעור דמי השכירות החודשיים בתקופת האופציה.
        בעל הדירה ישלח לשוכר הודעה בכתב המפרטת את גובה דמי השכירות בתקופת האופציה לא יאוחר מ־60 ימים לפני תום תקופת השכירות.
        אי שליחת הודעה על ידי בעל הדירה במועד, כמוה כהסכמת הצדדים כי גובה דמי השכירות בתקופת האופציה יהיה כמפורט בסעיף 5.1.
 
     3. מימוש תקופת האופציה כפוף למילוי כל התנאים המצטברים להלן על ידי השוכר:
 
        1. השוכר שלח לבעל הדירה הודעה בכתב על רצונו לממש את תקופת האופציה וזאת לא יאוחר מ־45 ימים לפני תום תקופת השכירות.
-       2. השוכר הפקיד בידי בעל הדירה, לא יאוחר מ־30 ימים לפני תום תקופת השכירות, {{extend_option.n_months|ins}} ({{extend_option.n_months|verbal_female|ins}}) המחאות בגין דמי השכירות בתקופת האופציה.\
+       2. השוכר הפקיד בידי בעל הדירה, לא יאוחר מ־30 ימים לפני תום תקופת השכירות, {{extend_option.n_months|ins}} ({{extend_option.n_months|hebrew_count("f")|ins}}) המחאות בגין דמי השכירות בתקופת האופציה.\
           מובהר כי חובת הפקדת ההמחאות לא תחול אם הסכימו הצדדים בכתב על תשלום דמי השכירות באמצעות העברה בנקאית.
        3. השוכר דאג לכך שהביטחונות המוגדרים בסעיף 15 יוארכו כך שיהיו בתוקף במשך כל תקופת האופציה.
        4. השוכר לא ביצע הפרה יסודית של חוזה זה ושעליה קיבל הודעה בכתב ומראש על ידי בעל הדירה.
 
     4. מימש השוכר את תקופת האופציה, יחולו כל הוראות חוזה זה כלשונן ובהתאמות המתחייבות גם בתקופת האופציה ובכל מקום בו נכתב תקופת השכירות בחוזה זה, הכוונה תהיה גם לתקופת האופציה.
 {% if contract.version != "hoze" %}\
-       מובהר בזאת שבכל מקרה תקופת השכירות לפי חוזה זה, לרבות תקופת האופציה, לא תעלה על {{(period.n_months + extend_option.n_months)|esc}} ({{(period.n_months + extend_option.n_months)|verbal_male|esc}}) חודשים.{% endif %}
+       מובהר בזאת שבכל מקרה תקופת השכירות לפי חוזה זה, לרבות תקופת האופציה, לא תעלה על {{(period.n_months + extend_option.n_months)|esc}} ({{(period.n_months + extend_option.n_months)|hebrew_count("m")|esc}}) חודשים.{% endif %}
 
     5. מוסכם על הצדדים כי במידה שהשוכר לא מסר הודעה על מימוש תקופת האופציה במועד כאמור בסעיף 6.3.1, תסתיים תקופת השכירות במועד שנקבע בסעיף 4.1 ויחולו כל הוראות החוזה לגבי סיום חוזה זה, לרבות פינוי הדירה והחזרת החזקה לידי בעל הדירה.
 {% else %}
@@ -208,10 +208,10 @@
     1. השוכר מפקיד במעמד חתימת חוזה זה בידי בעל הדירה את המסמכים כדלקמן:
 
 {% if assurance.mode == "promissory" %}
-       - שטר חוב חתום בנוסח המצורף לחוזה זה **כנספח ד׳** לטובת בעל הדירה על סך של {{assurance.promissory.form.amount|ins}}₪ ({{assurance.promissory.form.amount|verbal_male|ins}} שקלים חדשים) {#בגובה עד 6 חודשי שכירות#}.
+       - שטר חוב חתום בנוסח המצורף לחוזה זה **כנספח ד׳** לטובת בעל הדירה על סך של {{assurance.promissory.form.amount|ins}}₪ ({{assurance.promissory.form.amount|hebrew_count("m")|ins}} שקלים חדשים) {#בגובה עד 6 חודשי שכירות#}.
        - כתב ערבות חתום בנוסח המצורף לחוזה זה **כנספח ג׳**. לכתב הערבות יצורף צילום תעודת זהות.
 {% elif assurance.mode == "bank-guarantee" %}
-       - פיקדון כספי או ערבות בנקאית אוטונומית לטובת בעל הדירה בסך של {{assurance.bank_guarantee.amount|ins}}₪ ({{assurance.bank_guarantee.amount|verbal_male|ins}} שקלים חדשים) {#לא יותר מ־3 חודשי שכירות#}
+       - פיקדון כספי או ערבות בנקאית אוטונומית לטובת בעל הדירה בסך של {{assurance.bank_guarantee.amount|ins}}₪ ({{assurance.bank_guarantee.amount|hebrew_count("m")|ins}} שקלים חדשים) {#לא יותר מ־3 חודשי שכירות#}
          שתהיה בתוקף במהלך כל תקופת השכירות וכן במשך 30 (שלושים) ימים לאחר סיומה של תקופת השכירות.
 {% else %}{{ raise('An error occurred: unexpected condition') }}{% endif %}
 
@@ -372,7 +372,7 @@ _יש לציין מיקום ותיאור הפגם_
 
 אני {{tenant[0].name|ins}} מתחייב לשלם כנגד שטר זה לפקודת {{landlord.name|ins}}
 (להלן ”**בעל הדירה**”)
-סך של: {{assurance.promissory.form.amount|ins}}₪ ({{assurance.promissory.form.amount|verbal_male|ins}} שקלים חדשים),
+סך של: {{assurance.promissory.form.amount|ins}}₪ ({{assurance.promissory.form.amount|hebrew_count("m")|ins}} שקלים חדשים),
 שיהא צמוד למדד המחירים לצרכן כמפורט להלן.
 
 סכום שטר זה צמוד לממד המחירים לצרכן כמפורט להלן:\
